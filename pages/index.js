@@ -13,6 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>HUUUM </h1>
+        <h1 className={styles.title}>X.Y.Z. </h1>
         <h1 className={styles.title}>
           نه که خیلی خفنیم.... گفتیم یه وبسایت درست کنیم
         </h1>
