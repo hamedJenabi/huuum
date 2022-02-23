@@ -21,7 +21,7 @@ export default function Home() {
         <h1 className={styles.title}>HUUUM </h1>
         <h1 className={styles.title}>X.Y.Z. </h1>
         <h1 className={styles.persianTitle}>
-          نه که خیلی خفنیم.... گفتیم یه وبسایت درست کنیم
+          نه که خیلی خفنیم... گفتیم یه وبسایت درست کنیم
         </h1>
         <h1 className={styles.title}>More info coming soon!</h1>
       </main>
