@@ -28,6 +28,7 @@ export default function Home() {
         <div className={styles.titleWrapper}>
           <p className={styles.title}>Bio</p>
           <p className={styles.title}>Concerts</p>
+          <p className={styles.title}>Contact</p>
         </div>
       </main>
     </div>
