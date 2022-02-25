@@ -1,3 +1,5 @@
+@import "./variables";
+
 html,
 body {
   // color: rgb(241, 248, 247);
@@ -15,6 +17,7 @@ body {
   background-position-x: 90%;
   background-position-y: 80%;
   background-color: #fffcff;
+  @include fade-in-slow();
   @media (min-width: 600px) {
     height: 100vh;
     background-position-x: 25%;
