@@ -1,23 +1,50 @@
-@import "./variables";
+@import "../../styles/variables";
 
 .container {
-  padding: 0;
+  //   padding: 0;
   position: relative;
-  background-image: url("/bg_mobile.png");
+  background-image: url("/bio.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 110%;
-  background-position-x: 90%;
+  background-position-x: 170%;
   background-position-y: 80%;
   background-color: #fffcff;
   @include fade-in-slow();
   @media (min-width: 600px) {
     height: 100vh;
-    background-position-x: 25%;
-    background-position-y: 100%;
-    background-size: 70%;
-    background-image: url("/bg.png");
+    background-position-x: 15%;
+    // background-position-y: 100%;
+    background-size: 100%;
+    background-image: url("/bio.jpeg");
+  }
+}
+.bio {
+  position: absolute;
+  min-width: 50%;
+  min-height: 50%;
+  top: 10%;
+  left: 36%;
+
+  p {
+    font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+      Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+      sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.25;
+    font-size: 1rem;
+    @media (min-width: 600px) {
+      font-size: 1.2rem;
+    }
+  }
+  @media (min-width: 600px) {
+    left: 48%;
+  }
+}
+.details {
+  @media (min-width: 600px) {
+    width: 50%;
   }
 }
 .bgWrapper {
@@ -46,15 +73,6 @@
   }
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
 .persianTitle {
   font-family: Noto Nastaliq Urdu, Lato, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
@@ -73,7 +91,7 @@
   justify-content: center;
   align-items: flex-end;
   gap: 25px;
-  height: 80vh;
+  height: 95vh;
   @media (min-width: 600px) {
     position: absolute;
     bottom: 100px;

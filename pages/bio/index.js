@@ -1,10 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
-import styles from "../styles/Home.module.scss";
+import styles from "./bio.module.scss";
 import { GraphQLClient } from "graphql-request";
 
-export default function Home({ bios }) {
+export default function bio({ bios }) {
   console.log("bios", bios);
   const { details } = bios[0];
   return (
@@ -19,17 +18,20 @@ export default function Home({ bios }) {
           rel="stylesheet"
         />
       </Head>
-      {/* <div className={styles.bgWrapper}>
-        <img className={styles.bg} src="/hosna2.png" alt="" />
-      </div> */}
-      <main className={styles.main}>
-        <div className={styles.titleWrapper}>
-          <Link href="/bio">
-            <p className={styles.title}>Bio</p>
-          </Link>
-          {/* <p className={styles.title}>Concerts</p>
 
-          <p className={styles.title}>Contact</p> */}
+      <main className={styles.main}>
+        <div className={styles.bio}>
+          <div
+            className={styles.details}
+            dangerouslySetInnerHTML={{ __html: details?.html }}
+          />
+        </div>
+        <div className={styles.titleWrapper}>
+          <Link href="/">
+            <p className={styles.title}>Home</p>
+          </Link>
+          {/* <p className={styles.title}>Concerts</p> */}
+          {/* <p className={styles.title}>Contact</p> */}
         </div>
       </main>
     </div>
