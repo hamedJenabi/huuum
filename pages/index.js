@@ -27,9 +27,9 @@ export default function Home({ bios }) {
           <Link href="/bio">
             <p className={styles.title}>Bio</p>
           </Link>
-          {/* <p className={styles.title}>Concerts</p>
-
-          <p className={styles.title}>Contact</p> */}
+          <Link href="mailto:Odarvishi@hotmail.com">
+            <p className={styles.title}>Contact</p>
+          </Link>
         </div>
       </main>
     </div>

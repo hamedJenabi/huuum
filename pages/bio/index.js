@@ -30,6 +30,9 @@ export default function bio({ bios }) {
           <Link href="/">
             <p className={styles.title}>Home</p>
           </Link>
+          <Link href="mailto:Odarvishi@hotmail.com">
+            <p className={styles.title}>Contact</p>
+          </Link>
           {/* <p className={styles.title}>Concerts</p> */}
           {/* <p className={styles.title}>Contact</p> */}
         </div>
