@@ -3,21 +3,24 @@
 .container {
   //   padding: 0;
   position: relative;
-  background-image: url("/bio.jpeg");
+  background-image: url("/bio.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 110%;
+  background-size: 180%;
   background-position-x: 170%;
   background-position-y: 80%;
   background-color: #fffcff;
   @include fade-in-slow();
   @media (min-width: 600px) {
+    background-position-x: 80%;
+  }
+  @media (min-width: 900px) {
     height: 100vh;
-    background-position-x: 15%;
+    background-position-x: 45%;
     // background-position-y: 100%;
-    background-size: 100%;
-    background-image: url("/bio.jpeg");
+    background-size: 130%;
+    background-image: url("/bio.png");
   }
 }
 .bio {
@@ -38,12 +41,21 @@
       font-size: 1.2rem;
     }
   }
+  margin-right: 40px;
   @media (min-width: 600px) {
+    margin-right: 60px;
+    left: 30%;
+  }
+  @media (min-width: 900px) {
+    margin-right: 60px;
     left: 48%;
   }
 }
 .details {
   @media (min-width: 600px) {
+    width: 100%;
+  }
+  @media (min-width: 900px) {
     width: 50%;
   }
 }

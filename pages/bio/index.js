@@ -4,7 +4,6 @@ import styles from "./bio.module.scss";
 import { GraphQLClient } from "graphql-request";
 
 export default function bio({ bios }) {
-  console.log("bios", bios);
   const { details } = bios[0];
   return (
     <div className={styles.container}>
