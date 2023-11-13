@@ -1,95 +1,123 @@
-@import "./variables";
+// @import "./variables";
 
-.container {
-  padding: 0;
-  position: relative;
-  background-image: url("/bg_mobile.png");
+// .container {
+//   // padding: 0;
+//   // position: relative;
+//   // background-image: url("/omid-bg.jpg");
+//   // background-size: cover;
+//   // background-repeat: no-repeat;
+//   // background-position: center;
+//   // background-size: 100%;
+//   // background-position-x: 100%;
+//   // background-position-y: 100%;
+//   // background-color: #fffcff;
+//   // @include fade-in-slow();
+//   // @media (min-width: 600px) {
+//   //   background-size: 100%;
+//   //   background-image: url("/omid-bg.jpg");
+//   // }
+// }
+// .bgWrapper {
+//   position: fixed;
+//   top: -50%;
+//   left: -50%;
+//   width: 200%;
+//   height: 200%;
+//   z-index: -1;
+// }
+// .bg {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   margin: auto;
+//   min-width: 50%;
+//   min-height: 50%;
+// }
+// .main {
+//   height: 100vh;
+//   @media (min-width: 600px) {
+//     height: 100vh;
+//     // padding: 0 0 100px 200px;
+//   }
+// }
+
+// .footer {
+//   display: flex;
+//   flex: 1;
+//   border-top: 1px solid #eaeaea;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .persianTitle {
+//   font-family: Noto Nastaliq Urdu, Lato, -apple-system, BlinkMacSystemFont,
+//     Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+//     Helvetica Neue, sans-serif;
+//   letter-spacing: 5px;
+//   line-height: 2.15;
+//   font-size: 2rem;
+//   text-align: center;
+//   @media (min-width: 600px) {
+//     font-size: 4rem;
+//   }
+// }
+
+.backgroundContainer {
+  background-image: url("/omid-bg.jpg");
   background-size: cover;
+  background-position: 100% 12%;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 110%;
-  background-position-x: 90%;
-  background-position-y: 80%;
-  background-color: #fffcff;
-  @include fade-in-slow();
-  @media (min-width: 600px) {
-    height: 100vh;
-    background-position-x: 25%;
-    background-position-y: 100%;
-    background-size: 70%;
-    background-image: url("/bg.png");
-  }
+  height: 100vh;
 }
-.bgWrapper {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  z-index: -1;
-}
-.bg {
+
+.websiteTitle {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
-}
-.main {
-  height: 80vh;
-  @media (min-width: 600px) {
-    height: 100vh;
-    padding: 0 0 100px 200px;
-  }
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.persianTitle {
-  font-family: Noto Nastaliq Urdu, Lato, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
-  letter-spacing: 5px;
-  line-height: 2.15;
+  top: 20px;
+  left: 10%;
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  letter-spacing: 1px;
+  color: white !important;
+  line-height: 1.15;
+  font-weight: 700;
   font-size: 2rem;
-  margin: 30px 0;
-  text-align: center;
   @media (min-width: 600px) {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 .titleWrapper {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  gap: 25px;
-  height: 80vh;
+  gap: 30px;
+  bottom: 100px;
+  left: 10%;
   @media (min-width: 600px) {
-    position: absolute;
     bottom: 100px;
-    left: 150px;
   }
 }
 .title {
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   letter-spacing: 1px;
+  color: white !important;
   line-height: 1.15;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
   @media (min-width: 600px) {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   &:hover {
     cursor: pointer;
   }
+}
+.full {
+  position: absolute;
+  object-fit: cover;
 }

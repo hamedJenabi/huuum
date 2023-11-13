@@ -3,34 +3,22 @@
 .container {
   //   padding: 0;
   position: relative;
-  background-image: url("/bio.png");
+  background-image: url("/D-1j.jpg");
   background-size: cover;
+  background-position: 100% 12%;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 180%;
-  background-position-x: 170%;
-  background-position-y: 80%;
-  background-color: #fffcff;
-  @include fade-in-slow();
-  @media (min-width: 600px) {
-    background-position-x: 80%;
-  }
-  @media (min-width: 900px) {
-    height: 100vh;
-    background-position-x: 45%;
-    // background-position-y: 100%;
-    background-size: 130%;
-    background-image: url("/bio.png");
-  }
+  height: 100vh;
+  background-image: url("/D-1j.jpg");
 }
 .bio {
   position: absolute;
-  min-width: 50%;
-  min-height: 50%;
+  // min-width: 50%;
+  // min-height: 50%;
   top: 10%;
   left: 36%;
 
   p {
+    color: white;
     font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
       Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
       sans-serif;
@@ -86,6 +74,8 @@
 }
 
 .persianTitle {
+  color: white;
+
   font-family: Noto Nastaliq Urdu, Lato, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
@@ -107,17 +97,38 @@
   @media (min-width: 600px) {
     position: absolute;
     bottom: 100px;
-    left: 150px;
+    left: 10%;
   }
 }
 .title {
+  color: white;
+
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   letter-spacing: 1px;
   line-height: 1.15;
-  font-size: 1rem;
+  font-size: 1.5rem;
   @media (min-width: 600px) {
-    font-size: 1.2rem;
+    font-size: 2rem;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.websiteTitle {
+  position: absolute;
+  top: 20px;
+  left: 10%;
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  letter-spacing: 1px;
+  color: white !important;
+  line-height: 1.15;
+  font-weight: 700;
+  font-size: 2rem;
+  @media (min-width: 600px) {
+    font-size: 3rem;
   }
   &:hover {
     cursor: pointer;

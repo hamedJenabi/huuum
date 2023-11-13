@@ -4,9 +4,9 @@ import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import { GraphQLClient } from "graphql-request";
 
-export default function Home({ bios }) {
+export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>HUUUM</title>
         <meta name="description" content="We are Huuum!" />
@@ -17,10 +17,16 @@ export default function Home({ bios }) {
           rel="stylesheet"
         />
       </Head>
-      {/* <div className={styles.bgWrapper}>
-        <img className={styles.bg} src="/hosna2.png" alt="" />
-      </div> */}
-      <main className={styles.main}>
+      <main className={styles.backgroundContainer}>
+        {/* <Image
+          src="/omid-bg.jpg"
+          alt=""
+          layout="fill"
+          className={styles.full}
+        /> */}
+        <Link href="/bio">
+          <p className={styles.websiteTitle}>HUUUM</p>
+        </Link>
         <div className={styles.titleWrapper}>
           <Link href="/bio">
             <p className={styles.title}>Bio</p>
@@ -32,29 +38,4 @@ export default function Home({ bios }) {
       </main>
     </div>
   );
-}
-
-export async function getStaticProps() {
-  const graphcms = new GraphQLClient(
-    "https://api-eu-central-1.graphcms.com/v2/cl0idw0ly1sqw01w75uoyac9k/master"
-  );
-
-  const { bios } = await graphcms.request(
-    `
-    {
-      bios {
-        details {
-          html
-        }
-        
-      }
-    }
-	  `
-  );
-
-  return {
-    props: {
-      bios,
-    },
-  };
 }

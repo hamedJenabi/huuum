@@ -3,8 +3,7 @@ import Link from "next/link";
 import styles from "./bio.module.scss";
 import { GraphQLClient } from "graphql-request";
 
-export default function bio({ bios }) {
-  const { details } = bios[0];
+export default function bio() {
   return (
     <div className={styles.container}>
       <Head>
@@ -19,11 +18,23 @@ export default function bio({ bios }) {
       </Head>
 
       <main className={styles.main}>
+        <Link href="/bio">
+          <p className={styles.websiteTitle}>HUUUM</p>
+        </Link>
         <div className={styles.bio}>
-          <div
-            className={styles.details}
-            dangerouslySetInnerHTML={{ __html: details?.html }}
-          />
+          <p className={styles.details}>
+            HUUUM is synonymous with synthesis, openness, substance and avid
+            noncompliance. The live project of Omid Darvish, Rojin Sharafi and
+            Astrid Wiesinger merges Folk-influenced Iranian vocals with free
+            jazz, ambience and electronic beats and impulses, bringing us dance
+            music of an entirely new kind. Atypical rhythms and microtonal
+            music, singing in multiple languages, sensitive improvization, and
+            the interlacing of artforms and cultures - HUUUM leads with
+            transcension and lands with movement. To Iran's ban on dance, HUUUM
+            is the definitive response. It is the domain of the unknown, the
+            unlearned, and the unapologetic that envelops this project, with
+            nothing to stop it but the club's last call.
+          </p>
         </div>
         <div className={styles.titleWrapper}>
           <Link href="/">
@@ -38,29 +49,4 @@ export default function bio({ bios }) {
       </main>
     </div>
   );
-}
-
-export async function getStaticProps() {
-  const graphcms = new GraphQLClient(
-    "https://api-eu-central-1.graphcms.com/v2/cl0idw0ly1sqw01w75uoyac9k/master"
-  );
-
-  const { bios } = await graphcms.request(
-    `
-    {
-      bios {
-        details {
-          html
-        }
-        
-      }
-    }
-	  `
-  );
-
-  return {
-    props: {
-      bios,
-    },
-  };
 }

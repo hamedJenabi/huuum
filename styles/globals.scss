@@ -10,21 +10,22 @@ body {
   //   Helvetica Neue, sans-serif;
   // letter-spacing: 1px;
   // background-image: url("/bg_mobile.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 110%;
-  background-position-x: 90%;
-  background-position-y: 80%;
-  background-color: #fffcff;
-  @include fade-in-slow();
-  @media (min-width: 600px) {
-    height: 100vh;
-    background-position-x: 25%;
-    background-position-y: 100%;
-    background-size: 70%;
-    // background-image: url("/bg.png");
-  }
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: 110%;
+  // background-position-x: 90%;
+  // background-position-y: 80%;
+  // background-color: #fffcff;
+  // @include fade-in-slow();
+  // @media (min-width: 600px) {
+  //   height: 100vh;
+  //   background-position-x: 25%;
+  //   background-position-y: 100%;
+  //   background-size: 70%;
+  //   // background-image: url("/bg.png");
+  // }
+  height: 90vh;
 }
 
 a {
