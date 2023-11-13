@@ -47,7 +47,7 @@ export default function bio() {
             <p className={styles.title}>Contact</p>
           </Link>
           {/* <p className={styles.title}>Concerts</p> */}
-          {/* <p className={styles.title}>Contact</p> */}
+          {/* <p clasc  sName={styles.title}>Contact</p> */}
         </div>
       </main>
     </div>
