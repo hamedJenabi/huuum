@@ -17,7 +17,7 @@ export default function bio() {
       </Head>
 
       <main className={styles.main}>
-        <Link href="/bio">
+        <Link href="/">
           <p className={styles.websiteTitle}>HUUUM</p>
         </Link>
         <div className={styles.bio}>
