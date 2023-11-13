@@ -24,12 +24,15 @@ export default function Home() {
           layout="fill"
           className={styles.full}
         /> */}
-        <Link href="/bio">
+        <Link href="/">
           <p className={styles.websiteTitle}>HUUUM</p>
         </Link>
         <div className={styles.titleWrapper}>
           <Link href="/bio">
             <p className={styles.title}>Bio</p>
+          </Link>
+          <Link href="/media">
+            <p className={styles.title}>Music</p>
           </Link>
           <Link href="mailto:Odarvishi@hotmail.com">
             <p className={styles.title}>Contact</p>

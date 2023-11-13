@@ -97,8 +97,9 @@
   align-items: flex-end;
   gap: 30px;
   bottom: 100px;
-  left: 10%;
+  left: 20%;
   @media (min-width: 600px) {
+    left: 49%;
     bottom: 100px;
   }
 }
@@ -109,9 +110,9 @@
   color: white !important;
   line-height: 1.15;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.4rem;
   @media (min-width: 600px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   &:hover {
     cursor: pointer;

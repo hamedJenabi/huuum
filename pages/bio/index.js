@@ -40,6 +40,9 @@ export default function bio() {
           <Link href="/">
             <p className={styles.title}>Home</p>
           </Link>
+          <Link href="/media">
+            <p className={styles.title}>Music</p>
+          </Link>
           <Link href="mailto:Odarvishi@hotmail.com">
             <p className={styles.title}>Contact</p>
           </Link>
