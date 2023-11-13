@@ -30,10 +30,10 @@ export default function bio() {
             music of an entirely new kind. Atypical rhythms and microtonal
             music, singing in multiple languages, sensitive improvization, and
             the interlacing of artforms and cultures - HUUUM leads with
-            transcension and lands with movement. To Iran's ban on dance, HUUUM
-            is the definitive response. It is the domain of the unknown, the
-            unlearned, and the unapologetic that envelops this project, with
-            nothing to stop it but the club's last call.
+            transcension and lands with movement. To Iran&rsquo;s ban on dance,
+            HUUUM is the definitive response. It is the domain of the unknown,
+            the unlearned, and the unapologetic that envelops this project, with
+            nothing to stop it but the club&rsquo;s last call.
           </p>
         </div>
         <div className={styles.titleWrapper}>
