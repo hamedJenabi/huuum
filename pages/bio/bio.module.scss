@@ -14,8 +14,8 @@
   position: absolute;
   // min-width: 50%;
   // min-height: 50%;
-  top: 10%;
-  left: 36%;
+  top: 20%;
+  left: 10%;
 
   p {
     color: white;
@@ -23,9 +23,12 @@
       Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
       sans-serif;
     letter-spacing: 1px;
-    line-height: 1.25;
+    line-height: 1.4;
     font-size: 1rem;
     @media (min-width: 600px) {
+      top: 20%;
+      line-height: 1.5;
+
       font-size: 1.2rem;
     }
   }
@@ -40,11 +43,9 @@
   }
 }
 .details {
-  @media (min-width: 600px) {
-    width: 100%;
-  }
+  width: 80%;
   @media (min-width: 900px) {
-    width: 50%;
+    width: 70%;
   }
 }
 .bgWrapper {
@@ -90,11 +91,14 @@
 }
 .titleWrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-end;
+  margin-left: 3rem;
   gap: 25px;
   height: 95vh;
+  left: 10%;
   @media (min-width: 600px) {
+    margin-left: 0;
     position: absolute;
     bottom: 100px;
     left: 10%;
@@ -107,9 +111,9 @@
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   letter-spacing: 1px;
   line-height: 1.15;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   @media (min-width: 600px) {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   &:hover {
     cursor: pointer;
