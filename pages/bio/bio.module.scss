@@ -133,8 +133,9 @@
   font-size: 2rem;
   @media (min-width: 600px) {
     font-size: 3rem;
-  }
-  &:hover {
-    cursor: pointer;
+    z-index: 222;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
