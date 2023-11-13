@@ -21,19 +21,7 @@ export default function bio() {
           <p className={styles.websiteTitle}>HUUUM</p>
         </Link>
         <div className={styles.bio}>
-          <p className={styles.details}>
-            HUUUM is synonymous with synthesis, openness, substance and avid
-            noncompliance. The live project of Omid Darvish, Rojin Sharafi and
-            Astrid Wiesinger merges Folk-influenced Iranian vocals with free
-            jazz, ambience and electronic beats and impulses, bringing us dance
-            music of an entirely new kind. Atypical rhythms and microtonal
-            music, singing in multiple languages, sensitive improvization, and
-            the interlacing of artforms and cultures - HUUUM leads with
-            transcension and lands with movement. To Iran&rsquo;s ban on dance,
-            HUUUM is the definitive response. It is the domain of the unknown,
-            the unlearned, and the unapologetic that envelops this project, with
-            nothing to stop it but the club&rsquo;s last call.
-          </p>
+          <p className={styles.details}>COMING SOON</p>
         </div>
         <div className={styles.titleWrapper}>
           <Link href="/">
