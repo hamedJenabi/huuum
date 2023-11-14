@@ -18,9 +18,6 @@ export default function bio() {
       </Head>
 
       <main className={styles.main}>
-        <Link href="/bio">
-          <p className={styles.websiteTitle}>HUUUM</p>
-        </Link>
         <div className={styles.bio}>
           <p className={styles.details}>
             HUUUM is synonymous with synthesis, openness, substance and avid
@@ -37,6 +34,9 @@ export default function bio() {
           </p>
         </div>
         <div className={styles.titleWrapper}>
+          <Link href="/">
+            <p className={styles.websiteTitle}>HUUUM</p>
+          </Link>
           <Link href="/">
             <p className={styles.title}>Home</p>
           </Link>

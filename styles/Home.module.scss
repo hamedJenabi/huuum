@@ -1,68 +1,4 @@
-// @import "./variables";
-
-// .container {
-//   // padding: 0;
-//   // position: relative;
-//   // background-image: url("/omid-bg.jpg");
-//   // background-size: cover;
-//   // background-repeat: no-repeat;
-//   // background-position: center;
-//   // background-size: 100%;
-//   // background-position-x: 100%;
-//   // background-position-y: 100%;
-//   // background-color: #fffcff;
-//   // @include fade-in-slow();
-//   // @media (min-width: 600px) {
-//   //   background-size: 100%;
-//   //   background-image: url("/omid-bg.jpg");
-//   // }
-// }
-// .bgWrapper {
-//   position: fixed;
-//   top: -50%;
-//   left: -50%;
-//   width: 200%;
-//   height: 200%;
-//   z-index: -1;
-// }
-// .bg {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   margin: auto;
-//   min-width: 50%;
-//   min-height: 50%;
-// }
-// .main {
-//   height: 100vh;
-//   @media (min-width: 600px) {
-//     height: 100vh;
-//     // padding: 0 0 100px 200px;
-//   }
-// }
-
-// .footer {
-//   display: flex;
-//   flex: 1;
-//   border-top: 1px solid #eaeaea;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .persianTitle {
-//   font-family: Noto Nastaliq Urdu, Lato, -apple-system, BlinkMacSystemFont,
-//     Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-//     Helvetica Neue, sans-serif;
-//   letter-spacing: 5px;
-//   line-height: 2.15;
-//   font-size: 2rem;
-//   text-align: center;
-//   @media (min-width: 600px) {
-//     font-size: 4rem;
-//   }
-// }
+@import "./variables";
 
 .backgroundContainer {
   background-image: url("/omid-bg.jpg");
@@ -73,18 +9,17 @@
 }
 
 .websiteTitle {
-  position: absolute;
-  top: 20px;
-  left: 10%;
+  margin: 10px 0;
+
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   letter-spacing: 1px;
   color: white !important;
   line-height: 1.15;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.3rem;
   @media (min-width: 600px) {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   &:hover {
     cursor: pointer;
@@ -93,17 +28,17 @@
 .titleWrapper {
   position: absolute;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  gap: 30px;
   bottom: 100px;
   left: 20%;
   @media (min-width: 600px) {
-    left: 49%;
+    left: 10%;
     bottom: 100px;
   }
 }
 .title {
+  margin: 10px 0;
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   letter-spacing: 1px;

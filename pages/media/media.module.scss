@@ -90,22 +90,19 @@
   }
 }
 .titleWrapper {
+  position: absolute;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  margin-left: 3rem;
-  gap: 25px;
-  height: 95vh;
+  flex-direction: column;
+  bottom: 100px;
   left: 10%;
   @media (min-width: 600px) {
-    margin-left: 0;
-    position: absolute;
-    bottom: 100px;
     left: 10%;
+    bottom: 100px;
   }
 }
 .title {
   color: white;
+  margin: 10px 0;
 
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -119,23 +116,20 @@
     cursor: pointer;
   }
 }
-
 .websiteTitle {
-  position: absolute;
-  top: 20px;
-  left: 10%;
+  margin: 10px 0;
+
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   letter-spacing: 1px;
   color: white !important;
   line-height: 1.15;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.3rem;
   @media (min-width: 600px) {
-    font-size: 3rem;
-    z-index: 222;
-    &:hover {
-      cursor: pointer;
-    }
+    font-size: 2rem;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
