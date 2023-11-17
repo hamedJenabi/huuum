@@ -46,6 +46,7 @@
   }
   &.active {
     transform: translateX(10px);
-    color: rgb(234, 215, 215);
+    color: rgb(225, 207, 207);
+    @include fade-in-fast();
   }
 }
