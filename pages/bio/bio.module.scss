@@ -22,7 +22,7 @@
 }
 .bio {
   position: absolute;
-  top: 10%;
+  top: 7%;
   left: 10%;
 
   p {
@@ -41,6 +41,7 @@
     }
   }
   @media (min-width: 600px) {
+    top: 10%;
     margin-right: 60px;
     left: 27%;
   }
