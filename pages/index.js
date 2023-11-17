@@ -1,9 +1,9 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
-import { GraphQLClient } from "graphql-request";
-
+import Header from "../components/Header";
 export default function Home() {
   return (
     <div>
@@ -18,26 +18,13 @@ export default function Home() {
         />
       </Head>
       <main className={styles.backgroundContainer}>
-        {/* <Image
-          src="/omid-bg.jpg"
-          alt=""
-          layout="fill"
-          className={styles.full}
-        /> */}
-        <div className={styles.titleWrapper}>
-          <Link href="/">
-            <p className={styles.websiteTitle}>HUUUM</p>
-          </Link>
-          <Link href="/bio">
-            <p className={styles.title}>Bio</p>
-          </Link>
-          <Link href="/media">
-            <p className={styles.title}>Music</p>
-          </Link>
-          <Link href="mailto:Odarvishi@hotmail.com">
-            <p className={styles.title}>Contact</p>
-          </Link>
-        </div>
+        <Header
+          items={[
+            { name: "Bio", link: "/bio" },
+            { name: "Music", link: "/media" },
+            { name: "Contact", link: "mailto:odarvishi@hotmail.com" },
+          ]}
+        />
       </main>
     </div>
   );

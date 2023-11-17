@@ -9,12 +9,20 @@
   background-repeat: no-repeat;
   height: 100vh;
   background-image: url("/D-1j.jpg");
+  @include fade-in-fast();
+}
+
+.bgWrapper {
+  // position: fixed;
+  // top: -50%;
+  // left: -50%;
+  // width: 200%;
+  // height: 200%;
+  z-index: -1;
 }
 .bio {
   position: absolute;
-  // min-width: 50%;
-  // min-height: 50%;
-  top: 5%;
+  top: 10%;
   left: 10%;
 
   p {
@@ -33,36 +41,21 @@
     }
   }
   @media (min-width: 600px) {
-    left: 30%;
+    margin-right: 60px;
+    left: 27%;
   }
   @media (min-width: 900px) {
-    left: 48%;
+    margin-right: 60px;
+    left: 28%;
   }
 }
 .details {
-  width: 80%;
+  width: 90%;
   @media (min-width: 900px) {
     width: 70%;
   }
 }
-.bgWrapper {
-  // position: fixed;
-  // top: -50%;
-  // left: -50%;
-  // width: 200%;
-  // height: 200%;
-  z-index: -1;
-}
-.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
-}
+
 .main {
   height: 80vh;
   @media (min-width: 600px) {

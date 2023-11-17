@@ -2,30 +2,15 @@
 
 html,
 body {
-  // color: rgb(241, 248, 247);
   padding: 0;
   margin: 0;
-  // font-family: Noto Nastaliq Urdu, Lato, -apple-system, BlinkMacSystemFont,
-  //   Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-  //   Helvetica Neue, sans-serif;
-  // letter-spacing: 1px;
-  // background-image: url("/bg_mobile.png");
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: 110%;
-  // background-position-x: 90%;
-  // background-position-y: 80%;
-  // background-color: #fffcff;
-  // @include fade-in-slow();
-  // @media (min-width: 600px) {
-  //   height: 100vh;
-  //   background-position-x: 25%;
-  //   background-position-y: 100%;
-  //   background-size: 70%;
-  //   // background-image: url("/bg.png");
-  // }
   height: 90vh;
+}
+p {
+  line-height: 1.4 !important;
+  @media (min-width: 600px) {
+    line-height: 1.8 !important;
+  }
 }
 
 a {

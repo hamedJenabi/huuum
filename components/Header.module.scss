@@ -1,12 +1,15 @@
-@import "./variables";
+@import "../styles/variables";
 
-.backgroundContainer {
-  background-image: url("/omid-bg.jpg");
-  background-size: cover;
-  background-position: 100% 12%;
-  background-repeat: no-repeat;
-  height: 100vh;
-  @include fade-in-fast();
+.titleWrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 60px;
+  left: 10%;
+  @media (min-width: 600px) {
+    left: 10%;
+  }
 }
 
 .websiteTitle {
@@ -26,35 +29,23 @@
     cursor: pointer;
   }
 }
-.titleWrapper {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  bottom: 100px;
-  left: 20%;
-  @media (min-width: 600px) {
-    left: 10%;
-    bottom: 100px;
-  }
-}
 .title {
+  color: white;
   margin: 10px 0;
+
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   letter-spacing: 1px;
-  color: white !important;
   line-height: 1.15;
-  font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   @media (min-width: 600px) {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   &:hover {
     cursor: pointer;
   }
-}
-.full {
-  position: absolute;
-  object-fit: cover;
+  &.active {
+    transform: translateX(10px);
+    color: rgb(234, 215, 215);
+  }
 }

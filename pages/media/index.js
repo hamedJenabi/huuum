@@ -1,6 +1,8 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import Head from "next/head";
 import Link from "next/link";
 import styles from "./media.module.scss";
+import Header from "../../components/Header";
 
 export default function bio() {
   return (
@@ -18,24 +20,28 @@ export default function bio() {
 
       <main className={styles.main}>
         <div className={styles.bio}>
-          <p className={styles.details}>COMING SOON</p>
+          <p className={styles.details}>
+            HUUUM`s debut embodies the essence of Folk Futurism. Identifying as
+            a band that reinterprets folklore in the present and envisions its
+            role in the future, HUUUM recognizes folklore as a potent source of
+            a community`s emotions—rage, desire, and sorrow. The band sees
+            various dialects, dances, and tunes as a form of revolution,
+            preserving elements that may one day be lost. Folklore music, shaped
+            by times of war, oppression, uprising, and rebirth, continues to
+            resonate. The region known as Iran today is a mosaic of diverse
+            cultures and languages. HUUUM`s members express curiosity about
+            delving into the music of this region, exploring its evolution
+            through time, landscapes, history, and experimentalism. This debut
+            album marks the beginning of HUUUM`s musical journey.
+          </p>
         </div>
-        <div className={styles.titleWrapper}>
-          <Link href="/">
-            <p className={styles.websiteTitle}>HUUUM</p>
-          </Link>
-          <Link href="/">
-            <p className={styles.title}>Home</p>
-          </Link>
-          <Link href="/bio">
-            <p className={styles.title}>Bio</p>
-          </Link>
-          <Link href="mailto:Odarvishi@hotmail.com">
-            <p className={styles.title}>Contact</p>
-          </Link>
-          {/* <p className={styles.title}>Concerts</p> */}
-          {/* <p className={styles.title}>Contact</p> */}
-        </div>
+        <Header
+          items={[
+            { name: "Bio", link: "/bio" },
+            { name: "Music", link: "/media" },
+            { name: "Contact", link: "mailto:odarvishi@hotmail.com" },
+          ]}
+        />
       </main>
     </div>
   );

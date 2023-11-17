@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import styles from "./bio.module.scss";
-import { GraphQLClient } from "graphql-request";
+import Header from "../../components/Header";
 
 export default function bio() {
   return (
@@ -22,7 +22,7 @@ export default function bio() {
           <p className={styles.details}>
             HUUUM is synonymous with synthesis, openness, substance and avid
             noncompliance. The live project of Omid Darvish, Rojin Sharafi and
-            Astrid Wiesinger merges Folk-influenced Iranian vocals with free
+            Alvaro collao león merges Folk-influenced Iranian vocals with free
             jazz, ambience and electronic beats and impulses, bringing us dance
             music of an entirely new kind. Atypical rhythms and microtonal
             music, singing in multiple languages, sensitive improvization, and
@@ -33,22 +33,13 @@ export default function bio() {
             nothing to stop it but the club&rsquo;s last call.
           </p>
         </div>
-        <div className={styles.titleWrapper}>
-          <Link href="/">
-            <p className={styles.websiteTitle}>HUUUM</p>
-          </Link>
-          <Link href="/">
-            <p className={styles.title}>Home</p>
-          </Link>
-          <Link href="/media">
-            <p className={styles.title}>Music</p>
-          </Link>
-          <Link href="mailto:Odarvishi@hotmail.com">
-            <p className={styles.title}>Contact</p>
-          </Link>
-          {/* <p className={styles.title}>Concerts</p> */}
-          {/* <p clasc  sName={styles.title}>Contact</p> */}
-        </div>
+        <Header
+          items={[
+            { name: "Bio", link: "/bio" },
+            { name: "Music", link: "/media" },
+            { name: "Contact", link: "mailto:odarvishi@hotmail.com" },
+          ]}
+        />
       </main>
     </div>
   );
