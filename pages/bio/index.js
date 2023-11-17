@@ -9,7 +9,7 @@ export default function bio() {
       <Head>
         <title>HUUUM</title>
         <meta name="description" content="We are Huuum!" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/fav.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Lato&family=Open+Sans:wght@300&display=swap"
