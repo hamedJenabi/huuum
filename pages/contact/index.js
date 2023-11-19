@@ -27,6 +27,7 @@ export default function Contact() {
           </p>
         </div>
         <div className={styles.credit}>
+          <p>Credits:</p>
           <p className={styles.details}> Painting: Hosna Darvishi</p>
           <p className={styles.details}>
             Website:
