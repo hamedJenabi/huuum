@@ -45,7 +45,7 @@
     cursor: pointer;
   }
   &.active {
-    transform: translateX(10px);
+    text-decoration: underline;
     color: rgb(225, 207, 207);
     @include fade-in-fast();
   }

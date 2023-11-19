@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
-import styles from "./bio.module.scss";
+import styles from "./contact.module.scss";
 import Header from "../../components/Header";
-
-export default function bio() {
+import Image from "next/image";
+export default function Contact() {
   return (
     <div className={styles.container}>
       <Head>
@@ -20,17 +20,19 @@ export default function bio() {
       <main className={styles.main}>
         <div className={styles.bio}>
           <p className={styles.details}>
-            HUUUM is synonymous with synthesis, openness, substance and avid
-            noncompliance. The live project of Omid Darvish, Rojin Sharafi and
-            Alvaro collao león merges Folk-influenced Iranian vocals with free
-            jazz, ambience and electronic beats and impulses, bringing us dance
-            music of an entirely new kind. Atypical rhythms and microtonal
-            music, singing in multiple languages, sensitive improvization, and
-            the interlacing of artforms and cultures - HUUUM leads with
-            transcension and lands with movement. To Iran&rsquo;s ban on dance,
-            HUUUM is the definitive response. It is the domain of the unknown,
-            the unlearned, and the unapologetic that envelops this project, with
-            nothing to stop it but the club&rsquo;s last call.
+            <strong>EMAIL:</strong>
+            <Link href="mailto:odarvishi@hotmail.com">
+              odarvishi@hotmail.com
+            </Link>
+          </p>
+        </div>
+        <div className={styles.credit}>
+          <p className={styles.details}> Painting: Hosna Darvishi</p>
+          <p className={styles.details}>
+            Website:
+            <Link target="_blank" href="https://hamedjenabi.me">
+              Hamed Jenabi
+            </Link>
           </p>
         </div>
         <Header

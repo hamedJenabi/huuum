@@ -39,7 +39,7 @@ export default function bio() {
           items={[
             { name: "Bio", link: "/bio" },
             { name: "Music", link: "/media" },
-            { name: "Contact", link: "mailto:odarvishi@hotmail.com" },
+            { name: "Contact", link: "/contact" },
           ]}
         />
       </main>
