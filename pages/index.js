@@ -6,7 +6,7 @@ import styles from "../styles/Home.module.scss";
 import Header from "../components/Header";
 export default function Home() {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <title>HUUUM</title>
         <meta name="description" content="We are Huuum!" />
@@ -17,7 +17,8 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <main className={styles.backgroundContainer}>
+
+      <main className={styles.main}>
         <Header
           items={[
             { name: "Bio", link: "/bio" },
