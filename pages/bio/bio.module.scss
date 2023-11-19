@@ -3,12 +3,12 @@
 .container {
   //   padding: 0;
   position: relative;
-  background-image: url("/D-1j.jpg");
+  background-image: url("/bio.jpg");
   background-size: cover;
   background-position: 100% 12%;
   background-repeat: no-repeat;
   height: 100vh;
-  background-image: url("/D-1j.jpg");
+  background-image: url("/bio.jpg");
   @include fade-in-fast();
 }
 
