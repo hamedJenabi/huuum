@@ -46,3 +46,17 @@ export default function bio() {
     </div>
   );
 }
+
+// <iframe
+//   style={{
+//     border: "0",
+//     width: "350px",
+//     height: "470px",
+//   }}
+//   src="https://bandcamp.com/EmbeddedPlayer/album=1892424989/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+//   seamless
+// >
+//   {/* <a href="https://accidentalmeetings.bandcamp.com/album/huuum">
+//               HUUUM by HUUUM
+//             </a> */}
+// </iframe>;
