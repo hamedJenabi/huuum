@@ -28,9 +28,22 @@ export default function Contact() {
         <div className={styles.credit}>
           <div className={styles.bio}>
             <div className={styles.mail}>
-              <p>EMAIL:</p>
+              <p>e-mail:</p>
               <Link href="mailto:odarvishi@hotmail.com">
                 <p> odarvishi@hotmail.com</p>
+              </Link>
+              <Link
+                href="https://www.instagram.com/__huuum___"
+                passHref
+                target="_blank"
+              >
+                <Image
+                  style={{ marginTop: "16px" }}
+                  src="/instagram.png"
+                  alt="instagram"
+                  width={35}
+                  height={35}
+                />
               </Link>
             </div>
             <div className={styles.details}>

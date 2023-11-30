@@ -26,20 +26,6 @@ const Header = ({ items = [] }) => {
             {item.name}
           </Link>
         ))}
-        {pathname === "/contact" && (
-          <Link
-            href="https://www.instagram.com/__huuum___"
-            passHref
-            target="_blank"
-          >
-            <Image
-              src="/instagram.png"
-              alt="instagram"
-              width={35}
-              height={35}
-            />
-          </Link>
-        )}
       </div>
     </>
   );
