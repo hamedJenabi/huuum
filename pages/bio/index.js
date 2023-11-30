@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "./bio.module.scss";
 import Header from "../../components/Header";
+import Image from "next/image";
 
 export default function bio() {
   return (
@@ -18,6 +19,13 @@ export default function bio() {
       </Head>
 
       <main className={styles.main}>
+        <Header
+          items={[
+            { name: "Bio", link: "/bio" },
+            { name: "Music", link: "/media" },
+            { name: "Contact", link: "/contact" },
+          ]}
+        />
         <div className={styles.bio}>
           <p className={styles.details}>
             HUUUM is synonymous with synthesis, openness, substance and avid
@@ -33,13 +41,6 @@ export default function bio() {
             nothing to stop it but the club&rsquo;s last call.
           </p>
         </div>
-        <Header
-          items={[
-            { name: "Bio", link: "/bio" },
-            { name: "Music", link: "/media" },
-            { name: "Contact", link: "/contact" },
-          ]}
-        />
       </main>
     </div>
   );

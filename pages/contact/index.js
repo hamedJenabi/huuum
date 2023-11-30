@@ -18,24 +18,6 @@ export default function Contact() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.bio}>
-          <p className={styles.details}>
-            <strong>EMAIL:</strong>
-            <Link href="mailto:odarvishi@hotmail.com">
-              odarvishi@hotmail.com
-            </Link>
-          </p>
-        </div>
-        <div className={styles.credit}>
-          <p>Credits:</p>
-          <p className={styles.details}> Painting: Hosna Darvishi</p>
-          <p className={styles.details}>
-            Website:
-            <Link target="_blank" href="https://hamedjenabi.me">
-              Hamed Jenabi
-            </Link>
-          </p>
-        </div>
         <Header
           items={[
             { name: "Bio", link: "/bio" },
@@ -43,6 +25,26 @@ export default function Contact() {
             { name: "Contact", link: "/contact" },
           ]}
         />
+        <div className={styles.credit}>
+          <div className={styles.bio}>
+            <div className={styles.mail}>
+              <p>EMAIL:</p>
+              <Link href="mailto:odarvishi@hotmail.com">
+                <p> odarvishi@hotmail.com</p>
+              </Link>
+            </div>
+            <div className={styles.details}>
+              <p>Credits:</p>
+              <p> Painting: Hosna Darvishi</p>
+              <p>
+                Website: {"      "}
+                <Link target="_blank" href="https://hamedjenabi.me">
+                  Hamed Jenabi
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   );

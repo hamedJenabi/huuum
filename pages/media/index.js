@@ -19,6 +19,13 @@ export default function bio() {
       </Head>
 
       <main className={styles.main}>
+        <Header
+          items={[
+            { name: "Bio", link: "/bio" },
+            { name: "Music", link: "/media" },
+            { name: "Contact", link: "/contact" },
+          ]}
+        />
         <div className={styles.bio}>
           <p className={styles.details}>
             HUUUM`s debut embodies the essence of Folk Futurism. Identifying as
@@ -35,13 +42,6 @@ export default function bio() {
             album marks the beginning of HUUUM`s musical journey.
           </p>
         </div>
-        <Header
-          items={[
-            { name: "Bio", link: "/bio" },
-            { name: "Music", link: "/media" },
-            { name: "Contact", link: "/contact" },
-          ]}
-        />
       </main>
     </div>
   );

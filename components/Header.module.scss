@@ -1,15 +1,11 @@
 @import "../styles/variables";
 
 .titleWrapper {
-  position: absolute;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  bottom: 60px;
-  left: 10%;
-  @media (min-width: 600px) {
-    left: 10%;
-  }
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 40px;
 }
 
 .websiteTitle {
@@ -47,12 +43,10 @@
   &.active {
     text-decoration: underline;
     color: rgb(225, 207, 207);
-    @include fade-in-fast();
   }
 }
 
 .instagram {
-  position: absolute;
   bottom: 8%;
   right: 10%;
   color: white;
