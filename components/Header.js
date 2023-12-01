@@ -11,7 +11,15 @@ const Header = ({ items = [] }) => {
   return (
     <>
       <div className={styles.titleWrapper}>
-        {/* <Image src="/huuum.png" alt="logo" width={35} height={35} /> */}
+        <Link href="/">
+          <Image
+            className={styles.logo}
+            src="/logo.jpeg"
+            alt="logo icon"
+            width={30}
+            height={30}
+          />
+        </Link>
         <Link href="/" className={styles.websiteTitle}>
           HUUUM
         </Link>
