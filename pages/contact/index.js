@@ -40,7 +40,7 @@ export default function Contact() {
                 <Image
                   style={{ marginTop: "16px" }}
                   src="/instagram.png"
-                  alt="instagram"
+                  alt="instagram icon"
                   width={35}
                   height={35}
                 />
